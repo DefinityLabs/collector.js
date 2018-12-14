@@ -1,0 +1,27 @@
+{
+  "name": "collector.js",
+  "version": "1.0.0",
+  "description": "Collects Function Callbacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinityLabs/collector.js.git"
+  },
+  "keywords": [
+    "Callback",
+    "Node.js",
+    "Function"
+  ],
+  "author": "Definity Labs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DefinityLabs/collector.js/issues"
+  },
+  "homepage": "https://github.com/DefinityLabs/collector.js#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
