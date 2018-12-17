@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "name": "main",
+      "commands": [
+        {
+          "value": "ship",
+          "execute": [
+            "git pull -r",
+            "npm install",
+            "npm run test | grep 'All files' | grep -o 100 | grep -c 100",
+	          "echo 'verifying code coverage'; exit $((${response} - 4))",
+            "git push"
+          ]
+        }
+      ]
+    }
+  ]
+}
