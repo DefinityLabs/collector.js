@@ -97,3 +97,42 @@ Collector.exec(fncA)
   .done((err, text) => console.log(text));
 // prints ABC
 ```
+
+## Collect
+
+Collect the response from all triggered functions
+
+```javascript
+const Collector = require("collector.js");
+
+function fncOne(callback) {
+  callback(null, "One");
+}
+
+function fncTwo(callback) {
+  callback(new Error("Error Message"));
+}
+
+function fncThree(callback) {
+  callback(null, "Three");
+}
+
+let collector = new Collector();
+collector.trigger("one", fncOne);
+collector.trigger("two", fncTwo);
+collector.trigger("three", fncThree);
+
+collector.done((err, data) => {
+  console.log("one", data.one.data);
+  // prints one
+
+  console.log("two", data.two.data);
+  // prints null
+
+  console.log("two (error)", data.two.err);
+  // prints Error Message
+
+  console.log("three", data.three.data);
+  // prints three
+});
+```
