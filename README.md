@@ -17,7 +17,7 @@ npm install @definitylabs/collector.js
 Executes all function and collect their responses.
 
 ```javascript
-const Collector = require("collector.js");
+const Collector = require("@definitylabs/collector.js");
 
 function fncA(callback) {
   callback(null, "A");
@@ -48,7 +48,7 @@ Collector.all([fncA, fncB, fncC], results => {
 Executes all function with the same callback.
 
 ```javascript
-const Collector = require("collector.js");
+const Collector = require("@definitylabs/collector.js");
 
 function fncOne(callback) {
   callback(null, "One", 1);
@@ -77,7 +77,7 @@ Collector.sequence([fncA, fncB, fncC], print);
 Chains the functions sending the response as the input for the next function.
 
 ```javascript
-const Collector = require("collector.js");
+const Collector = require("@definitylabs/collector.js");
 
 function fncA(callback) {
   callback(null, "A");
@@ -103,7 +103,7 @@ Collector.exec(fncA)
 Collect the response from all triggered functions
 
 ```javascript
-const Collector = require("collector.js");
+const Collector = require("@definitylabs/collector.js");
 
 function fncOne(callback) {
   callback(null, "One");
@@ -117,7 +117,7 @@ function fncThree(callback) {
   callback(null, "Three");
 }
 
-let collector = new Collector();
+const collector = new Collector();
 collector.trigger("one", fncOne);
 collector.trigger("two", fncTwo);
 collector.trigger("three", fncThree);

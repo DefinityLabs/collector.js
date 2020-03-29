@@ -1,7 +1,8 @@
 {
   "name": "@definitylabs/collector.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collects Function Callbacks",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage"
