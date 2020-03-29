@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/DefinityLabs/collector.js#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^25.2.3"
   }
 }
