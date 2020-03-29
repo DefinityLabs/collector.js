@@ -1,6 +1,6 @@
 {
-  "name": "collector.js",
-  "version": "1.0.0",
+  "name": "@definitylabs/collector.js",
+  "version": "1.0.1",
   "description": "Collects Function Callbacks",
   "main": "index.js",
   "scripts": {

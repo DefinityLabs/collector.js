@@ -6,10 +6,10 @@ As you should know we should not write synchronous function in Node.js, but the 
 
 Collector.js is responsible for collecting the functions response and trigger a callback with the all responses at once.
 
-## Instal
+## Install
 
 ```
-npm install collector.js
+npm install @definitylabs/collector.js
 ```
 
 ## All
